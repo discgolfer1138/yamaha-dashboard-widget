@@ -20,6 +20,14 @@ var btnIdToCmd = {
     'btnMuteOff':{
         'action':'PUT',
         'params':["Main_Zone", "Vol", "Mute", "Off"]
+    },
+    'btnPowerOn':{
+        'action':'PUT',
+        'params':["Main_Zone", "Power_Control", "Power", "On"]
+    },
+    'btnPowerOff':{
+        'action':'PUT',
+        'params':["Main_Zone", "Power_Control", "Power", "Standby"]
     }
 };
 

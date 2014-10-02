@@ -123,33 +123,33 @@ body {
     border-color: black;
     position: absolute;
     left: 73px;
-    top: 39px;
+    top: 19px;
     margin-top: 0px;
-    background-image: url(Images/btnMoveUp.png);
+    background-image: url(Images/btnVolumeUp.png);
     height: 26px;
     width: 26px;
     background-repeat: no-repeat no-repeat;
 }
 
 #btnVolumeUp:hover {
-    background-image: url(Images/btnMoveUp_on.png);
+    background-image: url(Images/btnVolumeUp_on.png);
 }
 
 #btnVolumeDown {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 14px;
-    top: 39px;
+    left: 73px;
+    top: 59px;
     margin-top: 0px;
-    background-image: url(Images/btnMoveDown.png);
+    background-image: url(Images/btnVolumeDown.png);
     height: 26px;
     width: 26px;
     background-repeat: no-repeat no-repeat;
 }
 
 #btnVolumeDown:hover {
-    background-image: url(Images/btnMoveDown_on.png);
+    background-image: url(Images/btnVolumeDown_on.png);
 }
 
 #lblCurrentHost {
@@ -441,14 +441,14 @@ body {
     left: 43px;
     top: 19px;
     margin-top: 0px;
-    background-image: url(Images/btnPlay.png);
+    background-image: url(Images/btnMuteOn.png);
     height: 26px;
     width: 26px;
     background-repeat: no-repeat no-repeat;
 }
 
 #btnMuteOn:hover {
-    background-image: url(Images/btnPlay_on.png);
+    background-image: url(Images/btnMuteOn_on.png);
 }
 
 #btnMuteOff {
@@ -458,12 +458,46 @@ body {
     left: 43px;
     top: 59px;
     margin-top: 0px;
-    background-image: url(Images/btnStop.png);
+    background-image: url(Images/btnMuteOff.png);
     height: 26px;
     width: 26px;
     background-repeat: no-repeat no-repeat;
 }
 
 #btnMuteOff:hover {
-    background-image: url(Images/btnStop_on.png);
+    background-image: url(Images/btnMuteOff_on.png);
+}
+
+#btnPowerOn {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 13px;
+    top: 19px;
+    margin-top: 0px;
+    background-image: url(Images/btnPower.png);
+    height: 26px;
+    width: 26px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnPowerOn:hover {
+    background-image: url(Images/btnPower_on.png);
+}
+
+#btnPowerOff {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 13px;
+    top: 59px;
+    margin-top: 0px;
+    background-image: url(Images/btnPower.png);
+    height: 26px;
+    width: 26px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnPowerOff:hover {
+    background-image: url(Images/btnPower_on.png);
 }
