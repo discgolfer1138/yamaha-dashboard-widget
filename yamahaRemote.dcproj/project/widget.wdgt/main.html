@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="Parts/Transitions.css">
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+</head>
+<body onload="load();" apple-part="com.apple.Dashcode.part.StackLayout">
+    <div id="front">
+        <img id="frontImg" src="Parts/Images/front.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.frontimage" apple-style="image-theme: 1; image-shape: 3; image-opacity: 1.00; image-top-color: 0.400000006,0.400000006,0.400000006,1; image-bottom-color: 0.0980392173,0.0980392173,0.0980392173,1; image-radius: 12,12,12,12; image-border: 1; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 1; shine-on: 0; shine-strength: 0.39; shine-alpha-level: 0.28; shine-height: 0.25; glass-arc-height: 0.06; shadow-include-shadow: 1; shadow-offset: -1.00,-6.00; shadow-color: 0,0,0,0.3333;">
+        <div id="lblCurrentHost" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" apple-locked="false"></div>
+        <div id="stkControls" apple-part="com.apple.Dashcode.part.StackLayout" apple-locked="false"><div id="vwNavigation" apple-part-locked="true">
+                <div id="rectangleShape" apple-part="com.apple.Dashcode.part.roundedrectangleshape" class="apple-no-children" apple-style="image-theme: 1; image-shape: 3; image-button-type: 3; image-opacity: 1.00; image-top-color: 0.200000003,0.200000003,0.200000003,1; image-bottom-color: 0,0,0,1; image-radius: 5,5,5,5; image-border: 0; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 1; shine-on: 1; shine-strength: 0.05; shine-alpha-level: 0.09; shine-height: 0.67; glass-arc-height: -0.21; embossed-on: 1; embossed-depth: 1; embossed-shadow: 0.68; embossed-highlight: 0.3; shadow-include-shadow: 0;" apple-locked="false"></div>
+                <div id="btnVolumeUp" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendAction(event)" apple-locked="false"></div>
+                <div id="btnVolumeDown" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendAction(event)" apple-locked="false"></div>
+                <div id="btnMuteOn" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendAction(event)" apple-locked="false"></div>
+                <div id="btnMuteOff" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendAction(event)" apple-locked="false"></div>
+            </div><div id="vwPlayback" apple-part-locked="true">
+                <div id="rectangleShape1" apple-part="com.apple.Dashcode.part.roundedrectangleshape" class="apple-no-children" apple-style="image-theme: 1; image-shape: 3; image-button-type: 3; image-opacity: 1.00; image-top-color: 0.200000003,0.200000003,0.200000003,1; image-bottom-color: 0,0,0,1; image-radius: 5,5,5,5; image-border: 0; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 1; shine-on: 1; shine-strength: 0.05; shine-alpha-level: 0.09; shine-height: 0.67; glass-arc-height: -0.21; embossed-on: 1; embossed-depth: 1; embossed-shadow: 0.68; embossed-highlight: 0.3; shadow-include-shadow: 0;"></div>
+                <div id="btnStepBack" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnPause" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnStepForward" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnRewind" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnBigStepBack" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnPlay" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnStop" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnFastForward" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnBigStepForward" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+            </div></div>
+        <div class="apple-no-children" id="info" apple-part="com.apple.Dashcode.part.infobutton" apple-default-image-visibility="hidden"></div>
+        <div apple-part="com.apple.Dashcode.part.imageLayout" id="image1" apple-group="image1" onclick="toggleView(event)"><img class="apple-hidden" src="Images/yamaha_logo.png" id="inner_image2" apple-group="image1"></div>
+    </div>
+    <div id="back">
+        <img id="backImg" src="Parts/Images/back.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.backimage" apple-style=" image-radius: 12,12,12,12; image-border: 1; image-border-color: 0.1500,0.1500,0.1500; image-border-width: 3; shadow-include-shadow: 1; shadow-blur: 9.00; shadow-offset: -1.00,-6.00; shadow-color: 0.0000,0.0000,0.0000,0.3333;">
+        <div id="done" class="apple-no-children" apple-part="com.apple.Dashcode.part.glassbutton"></div>
+        <input id="txtHost" type="text" name="" value="192.168.1.122" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield">
+        <div id="lblHost" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis"></div>
+        <input id="txtPort" type="text" name="" value="80" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" maxlength="6">
+        <div id="lblPort" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+        <div apple-part="com.apple.Dashcode.part.imageLayout" id="image" apple-group="image"><img class="apple-hidden" src="Images/me_blue.png" id="inner_image1" apple-group="image"></div>
+    </div>
+</body>
+</html>
