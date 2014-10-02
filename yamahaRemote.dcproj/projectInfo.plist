@@ -7,13 +7,13 @@
 		<key>Widget</key>
 		<dict>
 			<key>AppIconFGImagePoint</key>
-			<string>{19, 10}</string>
+			<string>{0, 0}</string>
 			<key>AppIconFGImageSize</key>
-			<string>{34.75, 57}</string>
+			<string>{75, 75}</string>
 			<key>AppIconIncludeFGImage</key>
 			<true/>
 			<key>CYBackwardCompatibleExport</key>
-			<true/>
+			<false/>
 			<key>CYShineVersion</key>
 			<integer>2</integer>
 			<key>MainCSS</key>
